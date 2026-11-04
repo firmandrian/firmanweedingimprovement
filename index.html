@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f0df">
+  <meta name="description" content="Undangan pernikahan Firman & Fadia, 27 Maret 2027.">
+  <title>Firman & Fadia — Wedding Invitation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="locked">
+  <div class="petal-layer" aria-hidden="true"></div>
+
+  <section class="cover" id="cover">
+    <div class="cover-art"></div>
+    <div class="cover-content">
+      <p class="eyebrow reveal">Together with our families</p>
+      <p class="invite-small reveal">Dengan penuh sukacita, kami mengundang</p>
+      <h1 class="couple-script reveal">Firman <span>&</span> Fadia</h1>
+      <p class="invite-small reveal">Untuk hadir dan memberikan doa restu pada pernikahan kami</p>
+      <p class="cover-date reveal">27 <sup>th</sup> March, 2027</p>
+      <p class="guest-label reveal">Kepada Yth.</p>
+      <p class="guest-name reveal" id="guestDisplay">Bapak/Ibu/Saudara/i</p>
+      <button class="primary-button reveal" id="openInvite">Buka Undangan <span>✧</span></button>
+    </div>
+    <div class="cover-bottom-note">A day to remember · A love to celebrate</div>
+  </section>
+
+  <main id="invitation">
+    <section class="hero section-shell">
+      <div class="ornament">❧</div>
+      <p class="eyebrow">The Wedding of</p>
+      <h2 class="couple-script">Firman <span>&</span> Fadia</h2>
+      <p class="lead">“Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan untukmu pasangan hidup dari jenismu sendiri...”</p>
+      <p class="verse">QS. Ar-Rum: 21</p>
+      <div class="thin-rule"></div>
+      <p class="body-copy">Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan pernikahan putra-putri kami:</p>
+      <div class="couple-grid">
+        <article class="person-card reveal">
+          <div class="initial">F</div>
+          <h3>Firman Andrian</h3>
+          <p>Putra ketiga dari</p>
+          <p class="parents">Bapak Syahrizal<br>& Ibu Esty Widiarty</p>
+        </article>
+        <div class="ampersand">&</div>
+        <article class="person-card reveal">
+          <div class="initial">F</div>
+          <h3>Fadia Mita Sari</h3>
+          <p>Putri pertama dari</p>
+          <p class="parents">Bapak Sutarjo<br>& Ibu Suwarti</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="countdown-section section-shell">
+      <p class="eyebrow">Counting the days</p>
+      <h2 class="section-title">Menuju Hari Bahagia</h2>
+      <div class="countdown" id="countdown">
+        <div><strong id="days">00</strong><span>Hari</span></div>
+        <div><strong id="hours">00</strong><span>Jam</span></div>
+        <div><strong id="minutes">00</strong><span>Menit</span></div>
+        <div><strong id="seconds">00</strong><span>Detik</span></div>
+      </div>
+    </section>
+
+    <section class="event-section section-shell">
+      <div class="ornament">❧</div>
+      <p class="eyebrow">Save the date</p>
+      <h2 class="section-title">Rangkaian Acara</h2>
+      <p class="body-copy">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan hadir untuk memberikan doa restu.</p>
+      <div class="event-grid">
+        <article class="event-card reveal">
+          <span class="event-flower">✿</span>
+          <p class="eyebrow">The Ceremony</p>
+          <h3>Akad Nikah</h3>
+          <p class="event-date">Sabtu, 27 Maret 2027</p>
+          <p class="event-time">09.00 WIB</p>
+          <div class="thin-rule"></div>
+          <p class="venue">Saung Bogania</p>
+        </article>
+        <article class="event-card reveal">
+          <span class="event-flower">✿</span>
+          <p class="eyebrow">The Celebration</p>
+          <h3>Resepsi</h3>
+          <p class="event-date">Sabtu, 27 Maret 2027</p>
+          <p class="event-time">12.00 WIB</p>
+          <div class="thin-rule"></div>
+          <p class="venue">Saung Bogania</p>
+        </article>
+      </div>
+      <a class="outline-button" href="https://maps.app.goo.gl/Gz75qX37kh2qQjsR6" target="_blank" rel="noopener">Lihat Lokasi di Google Maps ↗</a>
+    </section>
+
+    <section class="rsvp-section section-shell">
+      <div class="ornament">❧</div>
+      <p class="eyebrow">Kindly respond</p>
+      <h2 class="section-title">Konfirmasi Kehadiran</h2>
+      <p class="body-copy">Mohon kesediaannya untuk mengisi konfirmasi kehadiran di bawah ini.</p>
+      <form id="rsvpForm" class="rsvp-form">
+        <label for="guestName">Nama</label>
+        <input id="guestName" name="guestName" type="text" placeholder="Nama lengkap" required>
+        <label for="attendance">Konfirmasi kehadiran</label>
+        <select id="attendance" name="attendance" required>
+          <option value="">Pilih jawaban</option>
+          <option value="Hadir">Dengan senang hati, saya akan hadir</option>
+          <option value="Tidak dapat hadir">Mohon maaf, saya belum dapat hadir</option>
+        </select>
+        <label for="guests">Jumlah tamu</label>
+        <select id="guests" name="guests" required>
+          <option value="1 orang">1 orang</option>
+          <option value="2 orang">2 orang</option>
+          <option value="3 orang">3 orang</option>
+          <option value="4 orang">4 orang</option>
+        </select>
+        <label for="wish">Ucapan & doa</label>
+        <textarea id="wish" name="wish" rows="3" placeholder="Tuliskan ucapan dan doa terbaik..."></textarea>
+        <button class="primary-button" type="submit">Kirim Konfirmasi via WhatsApp</button>
+      </form>
+    </section>
+
+    <section class="closing section-shell">
+      <div class="ornament">❧</div>
+      <p class="closing-quote">Merupakan kebahagiaan bagi kami apabila Anda berkenan hadir dan menjadi bagian dari hari istimewa kami.</p>
+      <p class="eyebrow">With love,</p>
+      <h2 class="couple-script">Firman <span>&</span> Fadia</h2>
+      <p class="closing-date">27 · 03 · 2027</p>
+    </section>
+    <footer>Made with love · Firman & Fadia</footer>
+  </main>
+
+  <button class="music-button" id="musicButton" hidden type="button" aria-label="Putar atau hentikan musik">♫ Musik: Off</button>
+  <script src="script.js"></script>
+</body>
+</html>
